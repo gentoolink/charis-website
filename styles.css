@@ -161,6 +161,17 @@ a:hover {
   box-shadow: 0 10px 26px rgba(15, 31, 61, 0.08);
 }
 
+.card picture {
+  display: block;
+}
+
+.card .card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .carousel-item {
   min-height: 360px;
   background: #0f1f3d;
