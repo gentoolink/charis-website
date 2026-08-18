@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="heroTitle heroDesc" width="720" height="520">
+  <title id="heroTitle">The Connaught Duplex Project</title>
+  <desc id="heroDesc">Illustration of a two-unit duplex home with warmly lit windows and a wheelchair ramp, set against the Nechako Valley hills.</desc>
+
+  <defs>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="720" height="520" rx="30" ry="30" />
+    </clipPath>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2138" />
+      <stop offset="55%" stop-color="#10395c" />
+      <stop offset="100%" stop-color="#0b2740" />
+    </linearGradient>
+    <radialGradient id="skyGlow" cx="78%" cy="18%" r="62%">
+      <stop offset="0%" stop-color="#f2a950" stop-opacity="0.30" />
+      <stop offset="60%" stop-color="#2b8a8a" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#0d2e4d" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3aa0a0" />
+      <stop offset="100%" stop-color="#22706f" />
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf8f2" />
+      <stop offset="100%" stop-color="#e8e1d2" />
+    </linearGradient>
+    <linearGradient id="ridge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2b8a8a" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#2b8a8a" stop-opacity="0.20" />
+    </linearGradient>
+    <linearGradient id="walk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cfd8e3" stop-opacity="0.34" />
+      <stop offset="100%" stop-color="#cfd8e3" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="lamp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f2a950" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#f2a950" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <g clip-path="url(#frame)">
+  <!-- sky -->
+  <rect width="720" height="520" fill="url(#sky)" />
+  <rect width="720" height="520" fill="url(#skyGlow)" />
+  <circle cx="566" cy="104" r="46" fill="#f2a950" opacity="0.22" />
+  <circle cx="566" cy="104" r="28" fill="#f2a950" opacity="0.35" />
+
+  <!-- Nechako Valley hills -->
+  <path d="M0 352 L118 268 L206 330 L300 252 L392 330 L486 262 L590 336 L720 276 L720 440 L0 440 Z" fill="url(#ridge)" />
+  <path d="M0 392 L142 322 L268 380 L390 318 L520 384 L640 334 L720 372 L720 440 L0 440 Z" fill="#123c5e" opacity="0.85" />
+
+  <!-- ground -->
+  <path d="M0 424 H720 V520 H0 Z" fill="#0b2740" />
+  <path d="M0 424 H720" stroke="#2b8a8a" stroke-opacity="0.45" stroke-width="2" />
+
+  <!-- conifers -->
+  <g fill="#1c6b63">
+    <path d="M96 424 L96 400 M96 400 L72 400 L96 356 L120 400 Z" />
+    <path d="M96 378 L74 378 L96 340 L118 378 Z" />
+    <rect x="92" y="398" width="8" height="26" fill="#14504c" />
+    <path d="M636 424 L636 406 M636 406 L618 406 L636 370 L654 406 Z" />
+    <path d="M636 390 L620 390 L636 358 L652 390 Z" />
+    <rect x="632" y="404" width="7" height="20" fill="#14504c" />
+  </g>
+
+  <!-- lamplight pooling on the walk -->
+  <ellipse cx="360" cy="436" rx="196" ry="30" fill="url(#lamp)" />
+
+  <!-- ===== the duplex ===== -->
+  <g>
+    <!-- roof -->
+    <path d="M172 286 L360 176 L548 286 Z" fill="url(#roof)" />
+    <path d="M172 286 L360 176 L548 286 Z" fill="none" stroke="#f5f2ea" stroke-opacity="0.25" stroke-width="2" stroke-linejoin="round" />
+    <!-- eaves -->
+    <rect x="162" y="284" width="396" height="12" rx="4" fill="#f5f2ea" opacity="0.85" />
+
+    <!-- walls -->
+    <rect x="188" y="296" width="344" height="128" fill="url(#wall)" />
+    <!-- party wall: two homes under one roof -->
+    <rect x="357" y="296" width="6" height="128" fill="#d9cfba" />
+
+    <!-- LEFT UNIT -->
+    <g>
+      <rect x="212" y="322" width="62" height="50" rx="4" fill="#f2a950" />
+      <rect x="212" y="322" width="62" height="50" rx="4" fill="none" stroke="#b9812f" stroke-width="2" />
+      <path d="M243 322 V372 M212 347 H274" stroke="#b9812f" stroke-width="2" />
+      <!-- door -->
+      <rect x="296" y="336" width="44" height="88" rx="5" fill="#2b8a8a" />
+      <circle cx="332" cy="382" r="3.5" fill="#f5f2ea" />
+    </g>
+
+    <!-- RIGHT UNIT (mirrored) -->
+    <g>
+      <rect x="446" y="322" width="62" height="50" rx="4" fill="#f2a950" />
+      <rect x="446" y="322" width="62" height="50" rx="4" fill="none" stroke="#b9812f" stroke-width="2" />
+      <path d="M477 322 V372 M446 347 H508" stroke="#b9812f" stroke-width="2" />
+      <!-- door -->
+      <rect x="380" y="336" width="44" height="88" rx="5" fill="#2b8a8a" />
+      <circle cx="388" cy="382" r="3.5" fill="#f5f2ea" />
+    </g>
+
+    <!-- gable vent -->
+    <path d="M360 214 L392 234 L360 254 L328 234 Z" fill="#f5f2ea" opacity="0.9" />
+  </g>
+
+  <!-- walkway to the door, widening toward the viewer -->
+  <path d="M330 424 H392 L436 520 H286 Z" fill="url(#walk)" />
+
+  <!-- ===== accessible ramp ===== -->
+  <g>
+    <!-- landing across both doors -->
+    <path d="M282 412 H438 V426 H282 Z" fill="#e3e9f0" />
+    <path d="M282 426 H438 V432 H282 Z" fill="#b9c4d2" />
+    <!-- sloped deck -->
+    <path d="M282 412 L282 426 L138 452 L138 438 Z" fill="#eef2f7" />
+    <path d="M282 426 L282 432 L138 458 L138 452 Z" fill="#b9c4d2" />
+    <!-- handrail -->
+    <path d="M138 424 L282 398" stroke="#2b8a8a" stroke-width="6" stroke-linecap="round" />
+    <path d="M138 436 L282 410" stroke="#2b8a8a" stroke-width="4" stroke-linecap="round" stroke-opacity="0.75" />
+    <path d="M140 446 L140 424 M188 438 L188 415 M236 429 L236 406 M282 420 L282 398" stroke="#2b8a8a" stroke-width="4" stroke-linecap="round" />
+    <!-- landing rail returns -->
+    <path d="M282 398 H438" stroke="#2b8a8a" stroke-width="6" stroke-linecap="round" />
+    <path d="M438 398 L438 418 M360 398 L360 412" stroke="#2b8a8a" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  </g>
+
+  <!-- frame -->
+  <rect x="1" y="1" width="718" height="518" rx="29" ry="29" fill="none" stroke="#f5f2ea" stroke-opacity="0.16" stroke-width="2" />
+</svg>
