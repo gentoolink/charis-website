@@ -197,6 +197,7 @@ a:hover {
   box-shadow: var(--shadow);
   background: var(--card);
   line-height: 0;
+  aspect-ratio: 4 / 3;
 }
 
 .reno-tile img {
@@ -207,8 +208,18 @@ a:hover {
   transition: transform 0.35s ease;
 }
 
-.reno-tile:hover img {
-  transform: scale(1.04);
+@media (hover: hover) {
+  .reno-tile:hover img {
+    transform: scale(1.04);
+  }
+}
+
+/* Phones: one photo per row so the before/after detail is actually legible,
+   with a wider crop to keep the section from becoming an endless scroll. */
+@media (max-width: 575.98px) {
+  .reno-tile {
+    aspect-ratio: 16 / 10;
+  }
 }
 
 .reno-label {
