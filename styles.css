@@ -191,6 +191,32 @@ a:hover {
   background: var(--accent);
 }
 
+.reno-tile {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--card);
+  line-height: 0;
+}
+
+.reno-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.reno-tile:hover img {
+  transform: scale(1.04);
+}
+
+.reno-label {
+  color: var(--teal);
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
 .hero-card {
   border: 1px solid var(--border);
 }
