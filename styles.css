@@ -158,9 +158,53 @@ a:hover {
 .donor-card {
   background: var(--card);
   border: 1px solid var(--border);
+  border-top: 6px solid var(--tier, var(--teal));
   border-radius: 16px;
   padding: 20px 22px;
   box-shadow: var(--shadow);
+}
+
+/* Giving tiers: shade runs deepest (greatest total) to lightest. */
+.tier-1 {
+  --tier: #0b4f4f;
+}
+
+.tier-2 {
+  --tier: #176f6f;
+}
+
+.tier-3 {
+  --tier: #2b8a8a;
+}
+
+.tier-4 {
+  --tier: #63b0b0;
+}
+
+.tier-5 {
+  --tier: #9fd0d0;
+}
+
+.donor-card .donor-list li::before {
+  background: var(--tier, var(--accent));
+}
+
+.donor-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: #5c6f82;
+  margin-bottom: 20px;
+}
+
+.donor-legend-swatch {
+  display: inline-block;
+  width: 34px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--tier);
 }
 
 .donor-list {
