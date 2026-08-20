@@ -62,6 +62,65 @@ a:hover {
   z-index: 1;
 }
 
+/* Photo hero: the duplex fills the header, scrimmed so the copy stays legible. */
+.jumbotron--photo {
+  padding: 88px 0 80px;
+}
+
+.jumbotron-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.jumbotron-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+}
+
+.jumbotron-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(13, 46, 77, 0.94) 0%,
+    rgba(13, 46, 77, 0.86) 30%,
+    rgba(15, 31, 61, 0.55) 55%,
+    rgba(15, 31, 61, 0.3) 100%
+  );
+}
+
+@media (min-width: 992px) {
+  .jumbotron--photo {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+  }
+
+  .jumbotron--photo > .container {
+    width: 100%;
+  }
+
+  /* Overscale so the painters clear the copy column instead of sitting behind it. */
+  .jumbotron-media img {
+    width: 125%;
+  }
+}
+
+/* Narrow screens put the copy over the middle of the photo, so darken it evenly. */
+@media (max-width: 991.98px) {
+  .jumbotron-media::after {
+    background: linear-gradient(
+      180deg,
+      rgba(13, 46, 77, 0.92) 0%,
+      rgba(15, 31, 61, 0.88) 100%
+    );
+  }
+}
+
 .brand-mark {
   width: 78px;
   height: 78px;
