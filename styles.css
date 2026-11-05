@@ -168,6 +168,15 @@ a:hover {
   color: rgba(247, 251, 255, 0.85);
 }
 
+.scripture-footer {
+  max-width: 640px;
+  margin: 0 auto 20px;
+  padding: 0 0 20px;
+  border-left: 0;
+  border-bottom: 1px solid rgba(247, 251, 255, 0.15);
+  font-size: 17px;
+}
+
 .hero-illustration {
   display: block;
   width: 100%;
